@@ -3,14 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RSV Associates | Legal Consultants</title>
+    <title>RSV Associates | Premium Legal Consultants</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="[fonts.googleapis.com](https://fonts.googleapis.com)">
-    <link rel="preconnect" href="[fonts.gstatic.com](https://fonts.gstatic.com)" crossorigin>
-    <link href="[fonts.googleapis.com](https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap)" rel="stylesheet">
-    <link rel="stylesheet" href="[cdnjs.cloudflare.com](https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css)">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Crimson+Text:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <!-- Animated Background -->
+    <div class="animated-background">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
     <!-- Loader -->
     <div class="loader" id="loader">
         <div class="loader-content">
@@ -47,10 +54,7 @@
 
     <!-- Hero Section -->
     <section class="hero" id="home">
-        <div class="hero-bg">
-            <div class="hero-gradient"></div>
-            <div class="hero-pattern"></div>
-        </div>
+        <div class="hero-gradient-animated"></div>
         <div class="hero-container">
             <div class="hero-content">
                 <div class="hero-badge" data-aos="fade-up">
@@ -58,14 +62,14 @@
                     <span>Trusted Legal Partners Since 2010</span>
                 </div>
                 <h1 class="hero-title" data-aos="fade-up" data-aos-delay="100">
-                    Expert Legal Solutions for 
-                    <span class="gradient-text">Complex Challenges</span>
+                    Expert Legal Solutions for
+                    <span class="gradient-text">Your Success</span>
                 </h1>
                 <p class="hero-description" data-aos="fade-up" data-aos-delay="200">
-                    We provide comprehensive legal consultancy services with a commitment to excellence, integrity, and client success. Navigate your legal journey with confidence.
+                    We provide comprehensive legal consultancy services with unwavering commitment to excellence, integrity, and your success. Navigate your legal journey with complete confidence.
                 </p>
                 <div class="hero-buttons" data-aos="fade-up" data-aos-delay="300">
-                    <a href="#services" class="btn btn-primary btn-lg">
+                    <a href="#services" class="btn btn-primary btn-lg btn-glow">
                         Explore Services
                         <i class="fas fa-arrow-right"></i>
                     </a>
@@ -96,8 +100,8 @@
             </div>
             <div class="hero-visual" data-aos="fade-left" data-aos-delay="200">
                 <div class="hero-image-wrapper">
-                    <div class="hero-image-bg"></div>
-                    <img src="[images.unsplash.com](https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=600&h=700&fit=crop)" alt="Legal consultation" class="hero-image">
+                    <div class="hero-glow"></div>
+                    <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=600&h=700&fit=crop" alt="Legal consultation" class="hero-image">
                     <div class="hero-floating-card card-1">
                         <i class="fas fa-shield-halved"></i>
                         <span>100% Confidential</span>
@@ -123,10 +127,10 @@
             <div class="about-grid">
                 <div class="about-images" data-aos="fade-right">
                     <div class="about-img-main">
-                        <img src="[images.unsplash.com](https://images.unsplash.com/photo-1521791136064-7986c2920216?w=500&h=600&fit=crop)" alt="Legal team meeting">
+                        <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=500&h=600&fit=crop" alt="Legal team meeting">
                     </div>
                     <div class="about-img-secondary">
-                        <img src="[images.unsplash.com](https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=300&h=350&fit=crop)" alt="Professional lawyer">
+                        <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=300&h=350&fit=crop" alt="Professional lawyer">
                     </div>
                     <div class="about-experience-badge">
                         <span class="exp-number">15+</span>
@@ -136,11 +140,11 @@
                 <div class="about-content" data-aos="fade-left">
                     <span class="section-tag">About Us</span>
                     <h2 class="section-title">
-                        A Legacy of Legal Excellence & 
+                        A Legacy of Legal Excellence &
                         <span class="gradient-text">Client Trust</span>
                     </h2>
                     <p class="about-text">
-                        RSV Associates has been at the forefront of legal consultancy, providing exceptional services to individuals and businesses alike. Our team of experienced attorneys combines deep legal expertise with a client-first approach.
+                        RSV Associates has been at the forefront of legal consultancy, providing exceptional services to individuals and businesses alike. Our team of experienced attorneys combines deep legal expertise with personalized client service.
                     </p>
                     <p class="about-text">
                         We believe in transparent communication, strategic thinking, and delivering results that exceed expectations. Every case is handled with the utmost care and professionalism.
@@ -174,7 +178,7 @@
                             </div>
                         </div>
                     </div>
-                    <a href="#contact" class="btn btn-primary">
+                    <a href="#contact" class="btn btn-primary btn-glow">
                         Schedule Consultation
                         <i class="fas fa-arrow-right"></i>
                     </a>
@@ -185,12 +189,11 @@
 
     <!-- Services Section -->
     <section class="services section" id="services">
-        <div class="services-bg"></div>
         <div class="container">
             <div class="section-header" data-aos="fade-up">
                 <span class="section-tag">Our Services</span>
                 <h2 class="section-title">
-                    Comprehensive Legal Services 
+                    Comprehensive Legal Services
                     <span class="gradient-text">Tailored for You</span>
                 </h2>
                 <p class="section-description">
@@ -204,7 +207,7 @@
                     </div>
                     <h3 class="service-title">Corporate Law</h3>
                     <p class="service-description">
-                        Expert guidance on business formations, mergers, acquisitions, and corporate governance matters.
+                        Expert guidance on business formations, mergers, acquisitions, and corporate governance.
                     </p>
                     <ul class="service-list">
                         <li>Company Registration</li>
@@ -311,7 +314,7 @@
             <div class="section-header" data-aos="fade-up">
                 <span class="section-tag">How We Work</span>
                 <h2 class="section-title">
-                    Our Simple 
+                    Our Simple
                     <span class="gradient-text">4-Step Process</span>
                 </h2>
                 <p class="section-description">
@@ -369,7 +372,7 @@
             <div class="section-header" data-aos="fade-up">
                 <span class="section-tag">Our Team</span>
                 <h2 class="section-title">
-                    Meet Our Expert 
+                    Meet Our Expert
                     <span class="gradient-text">Legal Team</span>
                 </h2>
                 <p class="section-description">
@@ -379,7 +382,7 @@
             <div class="team-grid">
                 <div class="team-card" data-aos="fade-up" data-aos-delay="100">
                     <div class="team-image">
-                        <img src="[images.unsplash.com](https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=500&fit=crop)" alt="Rajesh Sharma">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=500&fit=crop" alt="Rajesh Sharma">
                         <div class="team-overlay">
                             <div class="team-social">
                                 <a href="#"><i class="fab fa-linkedin-in"></i></a>
@@ -396,7 +399,7 @@
                 </div>
                 <div class="team-card" data-aos="fade-up" data-aos-delay="200">
                     <div class="team-image">
-                        <img src="[images.unsplash.com](https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=500&fit=crop)" alt="Sunita Verma">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=500&fit=crop" alt="Sunita Verma">
                         <div class="team-overlay">
                             <div class="team-social">
                                 <a href="#"><i class="fab fa-linkedin-in"></i></a>
@@ -413,7 +416,7 @@
                 </div>
                 <div class="team-card" data-aos="fade-up" data-aos-delay="300">
                     <div class="team-image">
-                        <img src="[images.unsplash.com](https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=500&fit=crop)" alt="Vikram Singh">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=500&fit=crop" alt="Vikram Singh">
                         <div class="team-overlay">
                             <div class="team-social">
                                 <a href="#"><i class="fab fa-linkedin-in"></i></a>
@@ -430,7 +433,7 @@
                 </div>
                 <div class="team-card" data-aos="fade-up" data-aos-delay="400">
                     <div class="team-image">
-                        <img src="[images.unsplash.com](https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=500&fit=crop)" alt="Priya Patel">
+                        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=500&fit=crop" alt="Priya Patel">
                         <div class="team-overlay">
                             <div class="team-social">
                                 <a href="#"><i class="fab fa-linkedin-in"></i></a>
@@ -451,12 +454,11 @@
 
     <!-- Testimonials Section -->
     <section class="testimonials section" id="testimonials">
-        <div class="testimonials-bg"></div>
         <div class="container">
             <div class="section-header" data-aos="fade-up">
                 <span class="section-tag">Testimonials</span>
                 <h2 class="section-title">
-                    What Our Clients 
+                    What Our Clients
                     <span class="gradient-text">Say About Us</span>
                 </h2>
             </div>
@@ -471,10 +473,10 @@
                             <i class="fas fa-star"></i>
                         </div>
                         <p class="testimonial-text">
-                            "RSV Associates handled my corporate merger with exceptional professionalism. Their attention to detail and strategic approach saved us both time and money."
+                            "RSV Associates handled my corporate merger with exceptional professionalism. Their strategic approach saved us time and money."
                         </p>
                         <div class="testimonial-author">
-                            <img src="[images.unsplash.com](https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop)" alt="Amit Kumar">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop" alt="Amit Kumar">
                             <div class="author-info">
                                 <h4>Amit Kumar</h4>
                                 <span>CEO, TechStart India</span>
@@ -490,10 +492,10 @@
                             <i class="fas fa-star"></i>
                         </div>
                         <p class="testimonial-text">
-                            "During my property dispute, the team was incredibly supportive and kept me informed throughout. Won the case with their expertise!"
+                            "During my property dispute, the team was incredibly supportive and kept me informed. Won the case with their expertise!"
                         </p>
                         <div class="testimonial-author">
-                            <img src="[images.unsplash.com](https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop)" alt="Meera Reddy">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop" alt="Meera Reddy">
                             <div class="author-info">
                                 <h4>Meera Reddy</h4>
                                 <span>Business Owner</span>
@@ -512,7 +514,7 @@
                             "The family law team handled my case with sensitivity and care. They made a difficult situation much easier to navigate."
                         </p>
                         <div class="testimonial-author">
-                            <img src="[images.unsplash.com](https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop)" alt="Rahul Mehta">
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop" alt="Rahul Mehta">
                             <div class="author-info">
                                 <h4>Rahul Mehta</h4>
                                 <span>IT Professional</span>
@@ -562,11 +564,11 @@
                 <div class="contact-info" data-aos="fade-right">
                     <span class="section-tag">Contact Us</span>
                     <h2 class="section-title">
-                        Let's Discuss Your 
+                        Let's Discuss Your
                         <span class="gradient-text">Legal Needs</span>
                     </h2>
                     <p class="contact-description">
-                        Reach out to us for a free initial consultation. We're here to help you with all your legal concerns.
+                        Reach out to us for a free initial consultation. We're here to help you.
                     </p>
                     <div class="contact-details">
                         <div class="contact-item">
@@ -651,7 +653,7 @@
                             <label for="message">Your Message</label>
                             <textarea id="message" name="message" rows="4" placeholder="Briefly describe your legal concern..." required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary btn-lg btn-block">
+                        <button type="submit" class="btn btn-primary btn-lg btn-block btn-glow">
                             Send Message
                             <i class="fas fa-paper-plane"></i>
                         </button>
@@ -659,19 +661,6 @@
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- Map Section -->
-    <section class="map-section">
-        <iframe 
-            src="[google.com](https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.6743466676!2d77.2090!3d28.6329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjjCsDM3JzU4LjQiTiA3N8KwMTInMzIuNCJF!5e0!3m2!1sen!2sin!4v1234567890)" 
-            width="100%" 
-            height="400" 
-            style="border:0;" 
-            allowfullscreen="" 
-            loading="lazy" 
-            referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
     </section>
 
     <!-- Footer -->
@@ -685,7 +674,7 @@
                             <span class="logo-subtext">Associates</span>
                         </a>
                         <p class="footer-description">
-                            Your trusted legal partners, committed to delivering excellence in every case. We stand by your side through every legal challenge.
+                            Your trusted legal partners, committed to delivering excellence in every case.
                         </p>
                         <div class="footer-social">
                             <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -745,7 +734,7 @@
     </a>
 
     <!-- WhatsApp Button -->
-    <a href="[wa.me](https://wa.me/919876543210)" class="whatsapp-btn" target="_blank">
+    <a href="https://wa.me/919876543210" class="whatsapp-btn" target="_blank">
         <i class="fab fa-whatsapp"></i>
     </a>
 
