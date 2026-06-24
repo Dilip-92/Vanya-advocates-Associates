@@ -1,11 +1,12 @@
-window.addEventListener("scroll", function () {
-    const cards = document.querySelectorAll(".card");
+const cards = document.querySelectorAll(".card");
+
+window.addEventListener("scroll", () => {
+    const triggerBottom = window.innerHeight - 100;
 
     cards.forEach(card => {
-        const position = card.getBoundingClientRect().top;
-        const screenHeight = window.innerHeight;
+        const top = card.getBoundingClientRect().top;
 
-        if (position < screenHeight - 100) {
+        if (top < triggerBottom) {
             card.style.opacity = 1;
             card.style.transform = "translateY(0)";
         }
